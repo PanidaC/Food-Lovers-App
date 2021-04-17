@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgThumbnail"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        tools:src="@mipmap/ic_launcher" />
+
+
+    <TextView
+        android:id="@+id/tvFoodname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/imgThumbnail"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        tools:text="food name" />
+
+    <ImageView
+        android:id="@+id/imgPin"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@id/imgThumbnail"
+        android:layout_below="@id/tvFoodname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvFoodshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFoodname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/imgPin"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/black"
+        tools:text="shop" />
+
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFoodshop"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/imgThumbnail"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        tools:text="price" />
+
+    <ImageView
+        android:id="@+id/imgRate"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/imgPin"
+        android:layout_marginTop="30dp"
+        android:maxLines="2"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>
